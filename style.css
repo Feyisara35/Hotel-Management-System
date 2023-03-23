@@ -1,0 +1,564 @@
+
+	@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital@1&family=Playball&display=swap');
+
+	/* CSS RESET */
+	* {
+		box-sizing: border-box;
+		padding: 0px 0px;
+		margin: 0px 0px;
+	}
+
+	body{
+		font-family: 'Montserrat', sans-serif;
+	}
+
+	/* Create a grid box layout for the webpage */
+	.grid-container
+	{
+		display: grid;
+		grid-template-rows: auto;
+		grid-template-areas: 
+			"header"
+			"main"
+			"content"
+			"footer";	
+	}
+	
+	/*<!-- Unique Booking Service Available at: /http://uniquebookingservices.com/ (Accessed: 14 October 2021 )-->*/
+	.top-container{
+		background-image: url("images/image1.jpg"); 
+		background-size: cover;
+		height: 700px;
+		width: 100%;
+	}
+
+	main
+	{
+		grid-area: main;
+	}
+	
+	content
+	{
+		grid-area: content;
+	}
+	
+	footer
+	{
+		grid-area: footer;
+	}
+	
+	header
+	{
+		grid-area: header;
+	}
+
+	/* Navigation Bar Styling */
+	.nav{
+		float: right;
+		margin: 0 auto;
+		padding: 0 auto;
+	}
+
+	.nav ul{
+		list-style: none;
+		overflow: hidden;
+		float: left;
+	}
+
+	.nav li{
+		float: left;
+		display: inline;
+	}
+
+	 .nav li a{
+		display:block;
+		padding: 8px;
+		color: #014B56;
+		text-decoration: none;
+		background-color:#E8C0C0;
+	}
+
+	.nav a:hover{
+		background-color:#D8F4EF;
+		font-weight: bold;
+	}
+
+	/* Logo Styling */
+	.logo {
+		float:left;
+		width: auto;
+		background-color:#E8C0C0 ;
+	}
+
+	.logo a{
+		color: #014B56;
+		text-decoration: none;
+		letter-spacing: 2.5px;
+		font-weight: bold;
+		font-size: 1.35em;
+	}
+
+	
+	.logo:hover{
+		background-color: #D8F4EF;
+	}  
+	 
+	/* Searchbar Styling */
+	.searchbar{
+		display: flex;
+		float: center;
+		align-content: center;
+		padding-top: 300px;
+		padding-left: 700px;
+		padding-right: 250px; 
+	}
+	
+	.searchbar input[type=text]
+	{
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+		border-bottom-left-radius: 20px;
+		border-bottom-right-radius: 20px;
+		border-color:#014B56;
+		font-family: 'Bona Nova', serif;
+		font-size: 1.1em;
+		text-align: center;
+	}
+	
+	.h3{
+		font-family:'Bona Nova', serif;
+		color: #014B56;
+		font-size: 1.2em;
+		padding-top: 30px;
+		text-align: center;
+	}
+
+	/* Home Page Image Container Styling */
+	.facilities-container{
+		width: 100%;
+		border: 1.5px solid #014B56;
+		background-color: #c0d5d8;
+		padding-bottom: 50px;
+	}
+
+	#slide-show img{
+		width: 475px;
+		height: 200;
+		align-items: center;
+	}
+
+	 .imagestyle
+	{
+		margin:30px;
+		float:left;
+		width: 300px;
+		padding-top:0px;
+		padding-left: 40px;
+	}
+	
+	.imagestyle img
+	{
+		width: 100%;
+		height: 200px;
+		border: 1px solid #014B56;
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+		border-bottom-left-radius: 20px;
+		border-bottom-right-radius: 20px;
+		border-color:#014B56;
+	} 
+	
+	.desc
+	{
+		text-align: center;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 12px;
+		color:#014B56;
+	}
+
+	/* House/Accommodation Listing page styling */
+	
+	#accomodation-main{
+		background-color: #c0d5d8;
+	}
+
+	.accomodation-container{
+		display: flex;
+		flex-direction: row;
+		padding-top: 100px;
+		padding-left: 95px;
+		width: 100%;
+		background-color: #c0d5d8;
+		} 
+	
+	 .accomodation-container div{
+		width: 350px;
+		margin: 30px;
+		align-items: center;
+		background-color: #c0d5d8;
+	}
+	
+	.accomodation-container img{
+		width: 100%;
+		height: 250px;
+	}
+
+	.accomodation-container p{
+		text-align: left;
+		line-height: 25px;
+		color: #014B56;
+		font-size: 1.0em;
+		font-weight: bold;
+		font-family: 'Montserrat', sans-serif;
+	}
+
+	/*Footer Styling */
+	.footer h3{
+		font-family:'Bona Nova', serif;
+		color: black;
+		font-size: 1.2em;
+		padding-top: 30px;
+		padding-bottom: 20px;
+		text-align: center;
+	}
+
+	.footer{
+		width: 100%;
+		background-color: #E8C0C0;
+		padding-bottom: 40px;
+	}
+
+	.footer ul{
+		text-decoration: none;
+		color: #014B56;
+		line-height: 2.0em;
+		text-align: center;
+		font-family:'Montserrat', sans-serif;
+	}
+
+	.footer li a
+	{
+		text-decoration: none;
+		color: #014B56;
+		line-height: 2.0em;
+		text-align: center;
+	}
+
+	.footer li:hover
+	{
+		background-color:#D8F4EF;
+		font-weight: bold;
+	} 
+
+	/* About Page Styling */
+	#about-container {
+		background-color: #c0d5d8;
+		padding-top: 30px;
+		padding-left: 320px; 
+		padding-right: 200px; 
+		justify-content: center;
+	}
+
+	#about-container img{
+		width: 850px;
+		height: 650px;
+		padding-top:40px;
+		padding-bottom:40px;
+	}
+
+	#description-container{
+		width: 100%;
+		height: 120px;
+		line-height: 38px;
+		font-family:'Montserrat', sans-serif;
+		font-size: 1.0em;
+		padding-left: 50px;
+		color: #014B56;
+	}
+
+	/* Booking Page Styling */
+	#booking-button{
+		background-color: #E8C0C0;
+		width: auto;
+		align-content: center;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+		margin-left: 100px;
+	}
+
+	#booking-button a{
+		text-decoration: none;
+		color: #014B56;
+		font-weight: bold;
+		font-size: 1.0em;
+		letter-spacing: 1.5px;
+	}
+
+	/* Housing Description Styling */
+	#house-container{
+		padding-top: 80px;
+		padding-bottom:40px;
+	}
+
+	.house-description img{
+		width: 650px;
+		height: 550px;
+		margin-left: 320px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.house-description p{
+		width: 100%;
+		height: 80px;
+		line-height: 38px;
+		font-family:'Montserrat', sans-serif;
+		font-size: 1.0em;
+		margin-left: 30px;
+		color: #014B56;
+	}
+
+	.middle-image img{
+		width: 650px;
+		height: 550px;
+		margin-left: 30px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	.bottom-image img{
+		width: 650px;
+		height: 550px;
+		margin-left: 30px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	/* Signup Page Styling */
+	#registration-container{
+		padding-top: 40px;
+		padding-bottom: 30px;
+		background-color: #c0d5d8;
+	}
+
+	#registration-heading h2{
+		padding-top: 30px;
+		display: block;
+		padding-left: 500px;
+		margin-left: 100px;
+		color: #014B56;
+		font-family: 'Montserrat', sans-serif;
+		letter-spacing: 2.5px;
+		justify-content: center;
+		
+	}
+
+	#registration-heading p{
+		padding-bottom: 20px;
+		padding-left: 10px;
+		color: #014B56;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: bold;
+	}
+
+	#registration-div{
+		padding-top: 30px;
+		padding-bottom: 30px;
+		color: #014B56;
+	}
+
+	/* Login Page Styling */
+	#login-container{
+		padding-top: 100px;
+		padding-bottom: 150px;
+		background-color: #c0d5d8;
+	}
+
+
+	#login-container h2{
+		padding-top: 30px;
+		display: block;
+		padding-left: 500px;
+		margin-left: 100px;
+		color: #014B56;
+		font-family: 'Montserrat', sans-serif;
+		letter-spacing: 2.5px;
+		justify-content: center;
+	}
+
+	#login-process a{
+		text-decoration: none;
+		color: #014B56;
+	}
+
+	#login-process{
+		padding-top: 200px;
+		padding-left: 350px;
+		padding-bottom: 210px;
+		font-size: 1.3em;
+		color: #014B56;
+		font-family: 'Montserrat', sans-serif;
+		letter-spacing: 1.5px;
+		background-color: #c0d5d8;
+	}
+
+	/* Logged in search bar Styling */
+	#searchBox{
+		width: 400px;
+	}
+	#searchbar-container{
+		display: flex;
+		float: center;
+		align-content: center;
+		padding-top: 90px;
+		padding-left: 500px;
+		padding-right: 300px;
+	}
+
+	#searchbar-container input[type=text]
+	{
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+		border-bottom-left-radius: 20px;
+		border-bottom-right-radius: 20px;
+		border-color:#014B56;
+		font-family: 'Bona Nova', serif;
+		font-size: 1.1em;
+		text-align: left;
+	}
+	.searchbar-button{
+			background-color: #E8C0C0;
+			align-content: center;
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+			border-bottom-left-radius: 5px;
+			border-bottom-right-radius: 5px;
+			text-decoration: none;
+			color: #014B56;
+			font-weight: bold;
+			font-size: 0.7em;
+			font-family: 'Montserrat', sans-serif;
+			letter-spacing: 1.5px;
+		}
+
+
+
+	#search-link a{
+		text-decoration: none;
+		color: #014B56;
+	}
+
+	#search a:hover
+	{
+		background-color:#E8C0C0;
+	}
+
+	#search-link{
+		padding-top: 20px;
+		padding-left: 40px;
+		padding-bottom: 12px;
+		font-size: 0.7em;
+		color: #014B56;
+		font-family: 'Montserrat', sans-serif;
+		letter-spacing: 1.5px;
+		background-color: #c0d5d8;
+	}
+
+	/* Login Validation Page Styling */
+	#addCustomerContainer{
+		background-color: #014B56;
+	}
+
+	#addCustomer a{
+		text-decoration: none;
+		color: #014B56;
+	}
+
+	#addCustomer{
+		padding-top: 200px;
+		padding-left: 350px;
+		padding-bottom: 210px;
+		font-weight: bold;
+		font-size: 1.3em;
+		font-family: 'Montserrat', sans-serif;
+		letter-spacing: 1.5px;
+		background-color: #c0d5d8;
+	}
+
+	/* Reservation Page Styling */
+
+	.booking-page{
+		padding-top: 200px;
+		padding-left: 350px;
+		padding-bottom: 210px;
+		font-weight: bold;
+		font-size: 1.3em;
+		color: #014B56;
+		font-family: 'Montserrat', sans-serif;
+		letter-spacing: 1.5px;
+		background-color: #c0d5d8;
+	}
+
+
+	#booking-container{
+		padding-top: 100px;
+		padding-bottom: 150px;
+		background-color: #c0d5d8;
+	}
+
+
+	#booking-container h2{
+		padding-top: 30px;
+		display: block;
+		padding-left: 500px;
+		margin-left: 100px;
+		color: #014B56;
+		font-family: 'Montserrat', sans-serif;
+		letter-spacing: 2.5px;
+		justify-content: center;
+	}
+	
+	#reference-container{
+		padding-top: 100px;
+		padding-bottom: 250px;
+		background-color: #c0d5d8;
+	}
+
+
+	#reference-container h3{
+		padding-top: 30px;
+		display: block;
+		padding-left: 500px;
+		margin-left: 100px;
+		color: #014B56;
+		font-family: 'Montserrat', sans-serif;
+		letter-spacing: 2.5px;
+		justify-content: center;
+	}
+
+	#reference-container p{
+		padding-top: 15px;
+		display: block;
+		padding-left: 30px;
+		margin-left: 100px;
+		color: #014B56;
+		font-family: 'Montserrat', sans-serif;
+		letter-spacing: 2.5px;
+		justify-content: center;
+
+	}
+	@media (max-width){
+		.flex-container{
+			flex-direction: row;
+		}
+	}
+
+	
+
+	 
+	 
